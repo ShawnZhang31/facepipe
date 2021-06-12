@@ -1,6 +1,6 @@
 FROM python:3.7
 
-ENV FLASK_APP cmit_faceswap.py
+ENV FLASK_APP cmit_facepipe.py
 ENV FLASK_CONFIG production
 
 RUN apt-get update -y

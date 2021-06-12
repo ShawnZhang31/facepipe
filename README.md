@@ -21,8 +21,18 @@
 
 
 ## 部署说明
+1. clone项目到本地
+2. 参照`./.env_example`在项目根目录创建`.env`文件，在`.env`文件中设置环境变量，下面是项目中自带一个.env文件，如果懒的话，可以只替换一下`SECRET_KEY`
+
+```
+APP_CONFIG=production #部署环境：production-生产环境;development-开发环境；testing-测试环境
+SECRET_KEY=fadfascsvarw22wxvZf    # 墙裂建议生产部署的适合替换SECRET_KEY
+```
+3. 在项目根目录执行`docker-composer up -d`即可
+
+
 ## 接口说明
-项目提供**人脸检测:`/api/v1/face/detect`**和**人脸468个特征点检测:`/api/v1/face/landmark`**两个接口，接口调用说明如下。
+项目提供**人脸检测**:`/api/v1/face/detect`和**人脸468个特征点检测**:`/api/v1/face/landmark`两个接口，接口调用说明如下。
 ### 人脸检测接口
 检测图像中人脸区域和6个关键特征点，检测效果如下图所示:
 
