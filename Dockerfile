@@ -4,7 +4,7 @@ ENV FLASK_APP cmit_facepipe.py
 ENV FLASK_CONFIG production
 
 RUN apt-get update -y
-RUN apt-get install cmake -y
+# RUN apt-get install cmake -y
 
 #opencv的依赖包
 RUN apt-get install python3-opencv -y
